@@ -1,0 +1,42 @@
+CREATE TABLE cliente (
+	idCliente SERIAL PRIMARY KEY,
+	NIFCliente INTEGER NOT NULL UNIQUE,
+	nome TEXT NOT NULL,
+	numTelemovel INTEGER NOT NULL UNIQUE,
+	email TEXT NOT NULL UNIQUE,
+	clienteGold BOOLEAN NOT NULL,
+	passCliente TEXT NOT NULL
+);
+
+INSERT INTO cliente (NIFCliente, nome, numTelemovel, email, clienteGold, passCliente) 
+VALUES 
+(123456789, 'João Silva', 912345678, 'joao.silva@example.com', true, 'O t5QQx<qSR'),
+(987654321, 'Ana Santos', 919876543, 'ana.santos@example.com', false, 'O t5QQx<qS?'),
+(555555554, 'Pedro Alves', 915555555, 'pedro.alves@example.com', true, 'O t5QQx<qS1'),
+(111111112, 'Maria Fernandes', 917777778, 'maria.fernandes@example.com', false, 'O t5QQx<qS$'),
+(122222222, 'Manuel Costa', 916666667, 'manuel.costa@example.com', true, 'O t5QQx<qS\'),
+(333333333, 'Carla Sousa', 918888888, 'carla.sousa@example.com', false, 'O t5QQx<qSa'),
+(444444444, 'Ricardo Silva', 912222222, 'ricardo.silva@example.com', true, 'O t5QQx<qS@'),
+(555555555, 'Sofia Silva', 917777777, 'sofia.silva@example.com', false, 'O t5QQx<qS`'),
+(666666666, 'Ana Costa', 919998999, 'ana.costa@example.com', true, 'O t5QQx<qSV'),
+(777777777, 'José Alves', 915635555, 'jose.alves@example.com', false, 'O t5QQx<qSR>'),
+(888888888, 'Marta Fernandes', 919499999, 'marta.fernandes@example.com', true, 'O t5QQx<qSRR'),
+(999999999, 'Tiago Santos', 916666666, 'tiago.santos@example.com', false, 'O t5QQx<qSR?'),
+(101010101, 'Joana Silva', 918852888, 'joana.silva@example.com', true, 'O t5QQx<qSR1'),
+(111111111, 'Ricardo Ferreira', 919111111, 'ricardo.ferreira@example.com', true, 'O t5QQx<qSR$'),
+(121212121, 'Rita Rocha', 916121212, 'rita.rocha@example.com', false, 'O t5QQx<qSR\'),
+(131313131, 'Luís Santos', 915131313, 'luis.santos@example.com', true, 'O t5QQx<qSRa'),
+(141414141, 'Filipa Costa', 919141414, 'filipa.costa@example.com', false, 'O t5QQx<qSR@'),
+(151515151, 'Miguel Ferreira', 916151515, 'miguel.ferreira@example.com', true, 'O t5QQx<qSR`'),
+(161616161, 'Ana Silva', 917161616, 'ana.silva@example.com', true, 'O t5QQx<qSRV'),
+(171717171, 'Pedro Santos', 917171717, 'pedro.santos@example.com', false, 'O t5QQx<qS?>'),
+(181818181, 'Marta Costa', 916181818, 'marta.costa@example.com', true, 'O t5QQx<qS?R'),
+(191919191, 'José Pereira', 919191919, 'jose.pereira@example.com', false, 'O t5QQx<qS??'),
+(202020202, 'Inês Santos', 919202020, 'ines.santos@example.com', true, 'O t5QQx<qS?1'),
+(212121212, 'Rui Alves', 916212121, 'rui.alves@example.com', false, 'O t5QQx<qS?$'),
+(222222222, 'Joana Gonçalves', 919222222, 'joana.goncalves@example.com', true, 'O t5QQx<qS?\'),
+(232323232, 'António Carvalho', 916232323, 'antonio.carvalho@example.com', false, 'O t5QQx<qS?a'),
+(242424242, 'Sara Santos', 919242424, 'sara.santos@example.com', true, 'O t5QQx<qS?@'),
+(252525252, 'Nuno Ferreira', 916252525, 'nuno.ferreira@example.com', false, 'O t5QQx<qS?`'),
+(262626262, 'Carla Silva', 916262626, 'carla.silva@example.com', true, 'O t5QQx<qS?V'),
+(272727272, 'Ricardo Santos', 919272727, 'ricardo.santos@example.com', false, 'O t5QQx<qS1>');

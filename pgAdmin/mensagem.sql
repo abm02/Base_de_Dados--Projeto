@@ -1,0 +1,46 @@
+CREATE TABLE mensagem (
+	idMensagem SERIAL PRIMARY KEY, 
+	dataEnvio TIMESTAMP NOT NULL,
+	assunto TEXT,
+	corpoMensagem TEXT,
+	idAdmin INTEGER
+	
+	--CONSTRAINT mensagem_FKadministrador FOREIGN KEY (idAdmin) REFERENCES administrador(idAdmin)
+);
+
+INSERT INTO mensagem (dataEnvio, assunto, corpoMensagem, idAdmin) VALUES 
+	('2023-04-01 15:30:00', 'New Reservation available', 'Dear valued customer, we are excited to announce that a new reservation has just become available! This is a great opportunity to secure your seat on board.', 5),
+	('2023-04-02 08:00:00', 'Schedule Change', 'Dear passengers, please be aware that starting from tomorrow, there will be a slight change in the schedule due to some road work on the main route. We apologize for the inconvenience.', 1),
+  	('2023-04-03 14:00:00', 'Fare Increase', 'Hello everyone, we would like to inform you that starting from next month, there will be a fare increase of 5%. This is due to the rising fuel costs and maintenance expenses. We appreciate your understanding.', 2),
+	('2023-04-04 11:00:00', 'New Bus Route', 'Good news! We are launching a new bus route that connects downtown with the airport. The service will start next week and the schedule is already available on our website.', NULL),
+	('2023-04-05 09:00:00', 'Bus Maintenance', 'Dear passengers, some of our buses will be temporarily out of service for maintenance purposes. We apologize for any inconvenience this may cause.', 4),
+	('2023-04-05 15:00:00', 'Service Interruption', 'Hello everyone, due to some unexpected road closures, there will be a temporary interruption of service on some of our routes. We are working to minimize the impact and will keep you updated.', 5),
+	('2023-04-06 10:00:00', 'New Partnership', 'We are excited to announce a new partnership with a local tourism agency. This means that we will offer some special tours and packages to our passengers. Stay tuned for more details!', 6),
+	('2023-04-08 16:00:00', 'Holiday Schedule', 'Dear passengers, please note that on the upcoming national holiday, our buses will operate on a Sunday schedule. Please plan your trips accordingly.', 18),
+	('2023-04-11 12:00:00', 'New Bus Purchase', 'Hello everyone, we are proud to announce that we have purchased some new buses that will join our fleet starting from next month. This will improve the quality of our service and reduce wait times.', 21),
+	('2023-04-12 09:00:00', 'Service Improvement', 'Good news! We have made some improvements to our bus tracking system, which means that you will now be able to check the real-time location of your bus on our website or mobile app.', 19),
+	('2023-04-12 13:00:00', 'Lost and Found', 'Dear passengers, if you have lost any personal belongings on one of our buses, please contact our customer service team as soon as possible. We will do our best to help you retrieve your items.', 42),
+	('2023-04-15 11:00:00', 'Route Extension', 'We are happy to announce that we have extended one of our routes to cover a new area. This will provide better access to some important locations in the city.', 39),
+	('2023-04-16 08:00:00', 'Bus Driver Appreciation', 'Today is Bus Driver Appreciation Day! We would like to express our gratitude to all our bus drivers who work hard every day to provide safe and reliable transportation to our passengers. If you see a driver today, don not forget to say thank you!', NULL),
+	('2023-04-16 14:00:00', 'Service Reminder', 'Dear passengers, we would like to remind you to always have your ticket or pass ready before boarding the bus. This will help us provide a smoother and faster service.', 1),
+	('2023-04-17 10:00:00', 'New Safety Measures', 'Your safety is our top priority! We have implemented some new safety measures on our buses, including cameras, emergency buttons, and driver training programs.', 5),
+	('2023-04-18 16:00:00', 'Service Update', 'Hello everyone, we have updated our bus schedule to reflect the recent changes in traffic patterns. Please check our website or mobile app for the latest information.', 15),
+	('2023-04-20 12:00:00', 'Route Adjustment', 'We have made some minor adjustments to one of our routes to better serve our passengers. The new schedule is already available on our website and mobile app.', 22),
+	('2023-04-21 09:00:00', 'Holiday Schedule Reminder', 'Just a friendly reminder that on the upcoming holiday, our buses will operate on a Sunday schedule. Please plan your trips accordingly.', 25),
+	('2023-04-21 13:00:00', 'April Fools Day', 'Happy April Fools Day! Don not worry, we will not be changing any of our routes to take you on a wild goose chase. Our service remains safe, reliable, and predictable.', 31),
+	('2023-04-22 11:00:00', 'Lost and Found Update', 'Dear passengers, we would like to inform you that we have found some lost items on one of our buses. If you have lost something recently, please contact our customer service team to check if we have your belongings.', NULL),
+	('2023-04-25 08:00:00', 'Service Disruption', 'We are experiencing some technical issues with our bus tracking system, which may cause some disruption in our service. We apologize for any inconvenience this may cause and are working to resolve the issue as soon as possible.', 42),
+	('2023-04-25 14:00:00', 'New Customer Service Hours', 'To better serve our passengers, we have extended our customer service hours. You can now reach us from 7am to 10pm every day, including weekends and holidays.', 45),
+	('2023-04-26 10:00:00', 'Bus Maintenance Update', 'Dear passengers, all our buses are now back in service after the maintenance work. We apologize for any inconvenience this may have caused and appreciate your patience.', 22),
+	('2023-04-27 16:00:00', 'Route Closure', 'Due to a special event in the city, one of our routes will be temporarily closed tomorrow. We apologize for any inconvenience this may cause and suggest you plan your trip accordingly.', 12),
+	('2023-04-29 12:00:00', 'New Bus Design', 'Have you noticed our new buses on the road? We have redesigned our buses to make them more comfortable and stylish, with features such as USB chargers and Wi-Fi.', NULL),
+	('2023-04-29 15:00:00', 'Service Reminder', 'Dear passengers, please remember to take all your belongings with you when leaving the bus. We cannot be responsible for lost or forgotten items.', 18),
+	('2023-04-30 13:00:00', 'Service Update', 'Hello passengers, we have updated our bus schedules to better serve you. Please check our website or mobile app for the latest information.', 11),
+	('2023-05-01 11:00:00', 'COVID-19 Update', 'To protect the health and safety of our passengers and staff, we have implemented some new measures to prevent the spread of COVID-19. This includes regular cleaning and sanitization of our buses and providing masks and hand sanitizers to our drivers and passengers.', 5),
+	('2023-05-01 15:00:00', 'Service Announcement', 'Dear passengers, we are experiencing some delays on one of our routes due to heavy traffic. We apologize for any inconvenience this may cause and are working to get the service back to normal as soon as possible.', NULL),
+	('2023-05-02 10:00:00', 'New Bus Route', 'We are excited to announce a new bus route that will connect some of the most popular destinations in the city. The new schedule is already available on our website and mobile app.', 26),
+	('2023-05-04 16:00:00', 'Route Change', 'Due to construction work, one of our routes will be temporarily changed starting tomorrow. Please check our website or mobile app for the latest information.', 38),
+	('2023-05-05 12:00:00', 'New Payment Options', 'To make it easier and more convenient for you to use our service, we have added some new payment options, including mobile payments and contactless cards. Check our website for more details.', 20),
+	('2023-05-06 09:00:00', 'New Route Extension', 'We are happy to announce an extension to one of our routes that will connect more neighborhoods in the city. The new schedule is already available on our website and mobile app.', 30),
+	('2023-05-07 13:00:00', 'Happy St. Patricks Day!', 'Happy St. Patricks Day to all our passengers! In celebration of this special day, we have decorated some of our buses with green ribbons and stickers.', 40),
+	('2023-05-10 11:00:00', 'Customer Survey', 'We value your feedback! Please take a few minutes to complete our customer survey and let us know how we can improve our service.', 44);
